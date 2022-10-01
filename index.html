@@ -17,7 +17,21 @@
     <div class="container-fluid">
       <div class="row">
 	<div class="col-sm text-center">
+	  
 	  <h1 class="display-1"> Can I add Chilli Oil to</h1>
+
+	  <form onsubmit="ask()">
+            <input type="text" class="form-control" id="baseItem" aria-describedby="baseItemLabel">
+	    <div id="baseItemLabel" class="form-text">Item in question</div>
+	    
+	    <button type="submit" class="btn btn-primary">Ask Dipshit!</button>
+	  </form>
+
+	  <script>
+	    function ask(){
+		alert("YES!");
+	    }
+	  </script>
 	</div>
       </div>
     </div>
