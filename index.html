@@ -55,7 +55,12 @@
 
     <script>
       function ask(){
-	  alert("A real website tells you: Of course you can!");
+	  //	  alert("A real website tells you: Of course you can!");
+	  var 	  item = document.getElementById("baseItem").value.trim();
+	  if (item.length === 0){
+	      alert("You have to actually enter an item  😕");
+	  }
+//	  alert(item.length);
       }
     </script>
 	  
