@@ -55,12 +55,16 @@
 
     <script>
       function ask(){
-	  //	  alert("A real website tells you: Of course you can!");
-	  var 	  item = document.getElementById("baseItem").value.trim();
+	  var 	  item = document.getElementById("baseItem").value.trim().toLowerCase();
 	  if (item.length === 0){
 	      alert("You have to actually enter an item  😕");
+	  } 	  else if (item.includes("dick")){
+	      alert("If you really really want 😜");
+	  } else if (item.includes("brownie")){
+	      alert("No, you really shouldn't 😓");
+	  } else {
+	      alert("A real website tells you: Of course you can!");
 	  }
-//	  alert(item.length);
       }
     </script>
 	  
